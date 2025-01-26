@@ -36,18 +36,23 @@ int main(){
     int populacao, ponto_turisticos;
     float area, PIB;
 
+    //entra a população da cidade
     printf("Quantas pessoal tem na cidade: ");
     scanf("%d", &populacao );
 
+    //entra a Área da cidade
     printf("Quanto e a Àrea da cidade em km²: ");
     scanf("%f", &area);
 
+    //entra a soma de todos os bens e serviços finais produzidos em um determinado período
     printf("Quanto e o PIB: ");
     scanf("%f", &PIB);
 
+    //entra a quantidade de postos turisticos
     printf("quantos pontos turisticos ela tem: ");
     scanf("%d", &ponto_turisticos);
 
+    //imprime na tela os valores
     printf("--------------------------------------------------------------\n");
     printf("estado: %s\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n ", estado, codigo_da_cidade, cidade, populacao);
     printf("Área em km²: %.2f\n PIB: %.2f\n Número de pontos turísticos: %d\n\n", area , PIB, ponto_turisticos );
