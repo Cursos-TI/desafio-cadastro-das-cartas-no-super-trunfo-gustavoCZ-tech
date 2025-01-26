@@ -53,9 +53,9 @@ int main(){
     scanf("%d", &ponto_turisticos);
 
     //imprime na tela os valores
-    printf("--------------------------------------------------------------\n");
+    printf("--------------------------------------------------------------\n\n");
     printf("estado: %s\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n ", estado, codigo_da_cidade, cidade, populacao);
-    printf("Área em km²: %.2f\n PIB: %.2f\n Número de pontos turísticos: %d\n\n", area , PIB, ponto_turisticos );
+    printf("Área em km²: %.2f\n PIB: %.2f\n Número de pontos turísticos: %d\n\n\n\n", area , PIB, ponto_turisticos );
 
     return 0;
     
