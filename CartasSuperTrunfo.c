@@ -45,7 +45,7 @@ int main(){
 
     //imprime na tela os valores
     printf("--------------------------------------------------------------\n\n");
-    printf("estado: %s\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n ", estado, codigo_da_cidade, cidade, populacao);
+    printf("carta2: \nestado: %s\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n ", estado, codigo_da_cidade, cidade, populacao);
     printf("Área em km²: %.2f\n PIB: %.2f\n Número de pontos turísticos: %d\n", area , PIB, ponto_turisticos );
 
 
@@ -93,7 +93,7 @@ int main(){
 
     //imprime na tela os valores
     printf("--------------------------------------------------------------\n\n");
-    printf("estado: %s\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n ", estado2, codigo_da_cidade2, cidade2, populacao2);
+    printf("Carta2: \nestado: %s\n Codigo da carta: %s\n Nome da cidade: %s\n População: %d\n ", estado2, codigo_da_cidade2, cidade2, populacao2);
     printf("Área em km²: %.2f\n PIB: %.2f\n Número de pontos turísticos: %d\n", area2 , PIB2, ponto_turisticos2 );
 
     return 0;
