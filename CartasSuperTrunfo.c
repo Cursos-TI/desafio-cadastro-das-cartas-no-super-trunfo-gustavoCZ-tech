@@ -6,9 +6,8 @@ int main(){
     char pais1[20], estado1[20], cidade1[30], dados1[20], codigo_da_cidade1[20];
     int ponto_turisticos1;
     float area1, PIB1;
-    unsigned long int populacao1;
-    float super_poder1 =  populacao1 + ponto_turisticos1 + area1 + PIB1 ; 
-
+    unsigned long int populacao1 ;
+    
     printf("Bem vindo ao Jogo de cartas super trunfo\n");
 
    //entrada de dados 
@@ -28,7 +27,7 @@ int main(){
 
     //entrar com o codigo da carta
     printf("Digite o codigo da cidade(A a H)estado e (01 a 04)cidade: ");
-    scanf("%s", &codigo_da_cidade1);
+    scanf("%s", codigo_da_cidade1);
 
     //entra a população da cidade
     printf("Quantas pessoal tem na cidade: ");
@@ -52,13 +51,16 @@ int main(){
     // pib per capita( pib total dividido pela populaçao)
     float pib_per_capita1 = (float) PIB1 / populacao1;
 
+    // declaração da variavel super poder  da carta 1
+    float super_poder1 =  populacao1 + ponto_turisticos1 + area1 + PIB1 ; 
+
     // carta 2
 
     char pais2[20], estado2[20], cidade2[30], dados2[20], codigo_da_cidade2[20];
     int ponto_turisticos2;
     float area2, PIB2; 
     unsigned long int populacao2;
-    float super_poder2 = (float) populacao2 + ponto_turisticos2 + area2 + PIB2 ; 
+    
 
    //entrada de dados 
    //digita o nome de um pais
@@ -69,7 +71,7 @@ int main(){
     scanf("%s", pais2);
 
    //entra com o valor para estado 
-    printf("Digite um estado(A a H)estado e (01 a 04)cidade: ");
+    printf("Digite um estado: ");
     scanf("%s", estado2);
 -
     //etra com um valor para cidade
@@ -77,7 +79,7 @@ int main(){
     scanf("%s", cidade2);
 
     //entrar com o codigo da carta
-    printf("Digite o codigo da cidade: ");
+    printf("Digite o codigo da cidade(A a H)estado e (01 a 04)cidade tendo em vista que 1 esado devconter 4 cidades: ");
     scanf("%s", codigo_da_cidade2);
 
     //entra a população da cidade
@@ -102,6 +104,9 @@ int main(){
     // pib per capita( pib total dividido pela populaçao)
     float pib_per_capita2 = (float) PIB2 / populacao2;
 
+    // declaração de variavel super poder da carta 2
+    float super_poder2 = (float) populacao2 + ponto_turisticos2 + area2 + PIB2 ; 
+
     //Dados da carta 1
     printf("--------------------------------------------------------------\n\n");
     printf("dados da carta 1\n");
@@ -120,30 +125,17 @@ int main(){
     //comparação
     
     printf("--------------------------------------------------------\n");
-    printf("vamos compara as cartas 1 significa que a afirmação e verdadeira e 0 que e falssa\n");
+    printf("comparação de população.\n\n");
 
-    unsigned long int comparacao_populacao = populacao1 > populacao2;
-    int comparacao_area =(int)area1 > area2;
-    float comparacao_pib = (int)PIB1 > PIB2;
-    float comparacao_densidade_populacional = (int)densidade_populacional1 < densidade_populacional2, comparacao_pib_per_capita = pib_per_capita1 > pib_per_capita2;
-    long int comparacao_super_poder = super_poder1 > super_poder2;
-    short comparacao_ponto_turistico =  ponto_turisticos1 > ponto_turisticos2;
+    printf("carta 1 - %s : %lu\n",cidade1, populacao1);
+    printf("carta 2 - %s : %lu\n",cidade2, populacao2);
 
-    //  População: Carta 1 venceu (1)
-    printf("População: Carta 1  venceu (%lu) \n", comparacao_populacao);
-
-    // Área: Carta 1 venceu (1)
-    printf("Área: Carta 1 venceu (%d)\n", comparacao_area);
-    // PIB: Carta 1 venceu (1)
-    printf(" PIB: Carta 1 venceu (%d)\n", comparacao_pib);
-    // Pontos Turísticos: Carta 1 venceu (1)
-    printf(" Pontos Turísticos: Carta 1 venceu (%lu)\n", comparacao_ponto_turistico);
-    // Densidade Populacional: Carta 2 venceu (0)
-    printf(" Densidade Populacional: Carta 2 venceu (%l-d)\n", comparacao_densidade_populacional);
-    // PIB per Capita: Carta 1 venceu (1)
-    printf("  PIB per Capita: Carta 1 venceu (%ld)\n", comparacao_pib_per_capita);
-    // Super Poder: Carta 1 venceu (1)
-    printf(" Super Poder: Carta 1 venceu (%ld)\n", comparacao_super_poder);
+    if(populacao1 > populacao2){
+        printf("Resultado: carta 1 ( %s )venceu\n",cidade1);
+    }else{
+        printf("Resultado: carta 2 ( %s )venceu\n",cidade2);
+    }
+   
 
     return 0;
 } 
