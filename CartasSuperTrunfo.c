@@ -42,7 +42,7 @@ int main()
 
   // menu de comparação
 
-  int comparação;
+  int comparacao;
   printf("--------------------------------------------------------\n");
   printf("menu de atributos para comparar\n");
   printf("1. população.\n");
@@ -50,8 +50,10 @@ int main()
   printf("3. PIB.\n");
   printf("4. ponto turistico.\n");
   printf("5. densidade demografica\n");
+  printf("escolha um tributo para comparar: ");
+  scanf("%d", &comparacao);
 
-  switch (comparação)
+  switch (comparacao)
   {
   case 1:
     if (populacao1 == populacao2)
@@ -60,14 +62,14 @@ int main()
     }
     else if (populacao1 > populacao2)
     {
-      printf("pais da carta 1  = %s\n  ||  pais da carta 2 = %s\n atributo usado para comparar: população", pais1, pais2);
-      printf("população carta 1  = %lu\n  ||  população da carta 2 = %lu\n", populacao1, populacao2);
+      printf("pais da carta 1  = %s  ||  pais da carta 2 = %s\n atributo usado para comparar: população", pais1, pais2);
+      printf("população carta 1  = %lu  ||  população da carta 2 = %lu\n", populacao1, populacao2);
       printf("carta 1 venceu!");
     }
     else
     {
-      printf("pais da carta 1  = %s\n  ||  pais da carta 2 = %s\n atributo usado para comparar: população\n", pais1, pais2);
-      printf("população carta 1  = %lu\n  ||  população da carta 2 = %lu\n", populacao1, populacao2);
+      printf("pais da carta 1  = %s  ||  pais da carta 2 = %s\n atributo usado para comparar: população\n", pais1, pais2);
+      printf("população carta 1  = %lu  ||  população da carta 2 = %lu\n", populacao1, populacao2);
       printf("carta 2 venceu!");
     }
     break;
@@ -78,14 +80,14 @@ int main()
     }
     else if (area1 > area2)
     {
-      printf("pais da carta 1  = %s\n  ||  pais da carta 2 = %s\n atributo usado para comparar: Área", pais1, pais2);
-      printf("A Área da carta 1  = %f\n  ||  A Área da carta 2 = %f\n", area1, area2);
+      printf("pais da carta 1  = %s  ||  pais da carta 2 = %s \natributo usado para comparar: Área", pais1, pais2);
+      printf("A Área da carta 1  = %f  ||  A Área da carta 2 = %f\n", area1, area2);
       printf("carta 1 venceu!");
     }
     else
     {
-      printf("pais da carta 1  = %s\n  ||  pais da carta 2 = %s\n atributo usado para comparar: população\n", pais1, pais2);
-      printf("A Área da carta 1  = %f\n  ||  A Área da carta 2 = %f\n", area1, area2);
+      printf("pais da carta 1  = %s  ||  pais da carta 2 = %s\n atributo usado para comparar: população\n", pais1, pais2);
+      printf("A Área da carta 1  = %f  ||  A Área da carta 2 = %f\n", area1, area2);
       printf("carta 2 venceu!");
     }
     break;
@@ -96,14 +98,14 @@ int main()
     }
     else if (PIB1 > PIB2)
     {
-      printf("pais da carta 1  = %s\n  ||  pais da carta 2 = %s\n atributo usado para comparar: população", pais1, pais2);
-      printf("PIB da carta 1  = %lu\n  ||  PIB da carta 2 = %lu\n", PIB1, PIB2);
+      printf("pais da carta 1  = %s ||  pais da carta 2 = %s\n atributo usado para comparar: população", pais1, pais2);
+      printf("PIB da carta 1  = %f\n  ||  PIB da carta 2 = %f\n", PIB1, PIB2);
       printf("carta 1 venceu!");
     }
     else
     {
-      printf("pais da carta 1  = %s\n  ||  pais da carta 2 = %s\n atributo usado para comparar: população\n", pais1, pais2);
-      printf("PIB da carta 1  = %lu\n  ||  PIB da carta 2 = %lu\n", PIB1, PIB2);
+      printf("pais da carta 1  = %s  ||  pais da carta 2 = %s\n atributo usado para comparar: população\n", pais1, pais2);
+      printf("PIB da carta 1  = %f  ||  PIB da carta 2 = %f\n", PIB1, PIB2);
       printf("carta 2 venceu!");
     }
     break;
@@ -114,14 +116,14 @@ int main()
     }
     else if (ponto_turisticos1 > ponto_turisticos2)
     {
-      printf("pais da carta 1  = %s\n  ||  pais da carta 2 = %s\n atributo usado para comparar: população", pais1, pais2);
-      printf("pontos turisticos da carta 1  = %d\n  ||  pontos turisticos da carta 2 = %d\n", ponto_turisticos1, ponto_turisticos2);
+      printf("pais da carta 1  = %s  ||  pais da carta 2 = %s\n atributo usado para comparar: população", pais1, pais2);
+      printf("pontos turisticos da carta 1  = %d  ||  pontos turisticos da carta 2 = %d\n", ponto_turisticos1, ponto_turisticos2);
       printf("carta 1 venceu!");
     }
     else
     {
-      printf("pais da carta 1  = %s\n  ||  pais da carta 2 = %s\n atributo usado para comparar: população\n", pais1, pais2);
-      printf("pontos turisticos da carta 1  = %d\n  ||  pontos turisticos da carta 2 = %d\n", ponto_turisticos1, ponto_turisticos2);
+      printf("pais da carta 1  = %s  ||  pais da carta 2 = %s\n atributo usado para comparar: população\n", pais1, pais2);
+      printf("pontos turisticos da carta 1  = %d  ||  pontos turisticos da carta 2 = %d\n", ponto_turisticos1, ponto_turisticos2);
       printf("carta 2 venceu!");
     }
     break;
@@ -132,14 +134,14 @@ int main()
     }
     else if (densidade_populacional1 < densidade_populacional2)
     {
-      printf("pais da carta 1  = %s\n  ||  pais da carta 2 = %s\n atributo usado para comparar: população", pais1, pais2);
-      printf("densidade populacinal da carta 1  = %f\n  ||  densidade populacional da carta 2 = %f\n", densidade_populacional1, densidade_populacional2);
+      printf("pais da carta 1  = %s  ||  pais da carta 2 = %s\n atributo usado para comparar: população", pais1, pais2);
+      printf("densidade populacinal da carta 1  = %f  ||  densidade populacional da carta 2 = %f\n", densidade_populacional1, densidade_populacional2);
       printf("carta 1 venceu!");
     }
     else
     {
-      printf("pais da carta 1  = %s\n  ||  pais da carta 2 = %s\n atributo usado para comparar: população\n", pais1, pais2);
-      printf("densidade populacional da carta 1  = %f\n  ||  densidade populacional da carta 2 = %f\n", populacao1, populacao2);
+      printf("pais da carta 1  = %s  ||  pais da carta 2 = %s\n atributo usado para comparar: população\n", pais1, pais2);
+      printf("densidade populacional da carta 1  = %f  ||  densidade populacional da carta 2 = %f\n", densidade_populacional1, populacao2);
       printf("carta 2 venceu!");
     }
     break;
